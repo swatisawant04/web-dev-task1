@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #efeef5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.company{
+
+    color:rgb(3, 3, 3);
+    font-style: oblique;
+  text-shadow: #323030;
+}
+
+.colorful-box {
+    background-color: #ba3393; /* Change to desired background color */
+    border: 2px solid #e761a4; /* Change to desired border color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 8px; /* Optional: add rounded corners */
+    color: #333; /* Change to desired text color */
+    display: inline-block; /* Ensures the box wraps around the text */
+    margin: 10px 0; /* Adjust margin as needed */
+    text-align: center; /* Optional: center text within the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member {
+    background: #deb3b3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.member h2 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.member p {
+    margin: 5px 10px 10px;
+}
+
+@media (max-width: 900px) {
+    .member {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .member {
+        width: calc(100% - 20px);
+    }
+}
